@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 
 const Ad = ({ size }: { size: "sm" | "md" | "lg" }) => {
+  const desc =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique fuga, corporis corrupti aliquam sint. Nemo facere, repudiandae cumque, architecto, quis nisi error voluptas repellendus delectus adipisci soluta. Aliquam, nihil?";
   return (
     <div className=" p-4 bg-white rounded-lg shadow-md text-xs">
       {/* TOP */}
@@ -10,7 +12,44 @@ const Ad = ({ size }: { size: "sm" | "md" | "lg" }) => {
         <Image src={"/more.png"} alt="" width={16} height={16} />
       </div>
       {/* BOTTOM  */}
-      <div className=""></div>
+      <div
+        className={` flex flex-col mt-4 ${size == "sm" ? "gap-2" : " gap-4"}`}
+      >
+        <div
+          className={` relative w-full ${
+            size == "sm" ? " h-24" : size == "md" ? "h-36" : " h-48"
+          }`}
+        >
+          <Image
+            className=" object-cover rounded-lg"
+            src={
+              "https://images.pexels.com/photos/10542142/pexels-photo-10542142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+            alt=""
+            fill
+          />
+        </div>
+        <div className=" flex items-center gap-4">
+          <Image
+            className=" object-cover rounded-full w-6 h-6"
+            src={
+              "https://images.pexels.com/photos/10542142/pexels-photo-10542142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+            alt=""
+            height={24}
+            width={24}
+          />
+          <span className=" text-blue-500 font-medium ">Some company</span>
+        </div>
+        <p className={`${size == "sm" ? " text-xs" : " text-sm"}`}>
+          {size === "sm"
+            ? desc?.substring(0, 50)
+            : size === "md"
+            ? desc?.substring(0, 90)
+            : desc}
+        </p>
+        <button className=" bg-gray-200 text-gray-500 p-2 text-sm rounded-lg">Lern More</button>
+      </div>
     </div>
   );
 };

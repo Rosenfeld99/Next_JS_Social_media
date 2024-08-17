@@ -13,9 +13,59 @@ const UserMediaCard = ({ userId }: { userId: string }) => {
         </Link>
       </div>
       {/* BOTTOM */}
-      <div className=" flex gap-4 justify-between flex-wrap ">
+      <div className=" flex gap-4 flex-wrap ">
         <div className=" relative w-1/5 h-24">
-        <Image
+          <Image
+            className=" object-cover rounded-md"
+            src={
+              "https://images.pexels.com/photos/10542142/pexels-photo-10542142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+            alt=""
+            fill
+          />
+        </div>
+        <div className=" relative w-1/5 h-24">
+          <Image
+            className=" object-cover rounded-md"
+            src={
+              "https://images.pexels.com/photos/10542142/pexels-photo-10542142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+            alt=""
+            fill
+          />
+        </div>
+        <div className=" relative w-1/5 h-24">
+          <Image
+            className=" object-cover rounded-md"
+            src={
+              "https://images.pexels.com/photos/10542142/pexels-photo-10542142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+            alt=""
+            fill
+          />
+        </div>
+        <div className=" relative w-1/5 h-24">
+          <Image
+            className=" object-cover rounded-md"
+            src={
+              "https://images.pexels.com/photos/10542142/pexels-photo-10542142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+            alt=""
+            fill
+          />
+        </div>
+        <div className=" relative w-1/5 h-24">
+          <Image
+            className=" object-cover rounded-md"
+            src={
+              "https://images.pexels.com/photos/10542142/pexels-photo-10542142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+            alt=""
+            fill
+          />
+        </div>
+        <div className=" relative w-1/5 h-24">
+          <Image
             className=" object-cover rounded-md"
             src={
               "https://images.pexels.com/photos/10542142/pexels-photo-10542142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
